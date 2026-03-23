@@ -29,10 +29,10 @@ public class UploadFileService {
             dir.mkdirs();
 
         // For windows
-        File saveFile = new File(uploadDir + "\\" + uniqueFileName + fileExtension);
+        // File saveFile = new File(uploadDir + "\\" + uniqueFileName + fileExtension);
 
         // For linux(ubuntu)
-        // File saveFile = new File(uploadDir + "/" + uniqueFileName + fileExtension);
+        File saveFile = new File(uploadDir + "/" + uniqueFileName + fileExtension);
 
         try {
             file.transferTo(saveFile);
